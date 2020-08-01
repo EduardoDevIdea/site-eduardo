@@ -15,18 +15,18 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="site/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="site/images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="site/css/bootstrap.min.css">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="site/style.css">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="site/css/responsive.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link rel="stylesheet" href="site/css/custom.css">
+	<script src="site/js/modernizr.js"></script> <!-- Modernizr -->
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -48,7 +48,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<img class="img-fluid" src="images/logo-eduardo.png" alt="" style="width: 200px; height: 60px;"/>
+			<img class="img-fluid" src="site/images/logo-eduardo.png" alt="" style="width: 200px; height: 60px;"/>
 		</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -77,7 +77,7 @@
     </nav>
     <!--END NAVBAR-->
 	
-	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-02.jpg')">
+	<section id="home" class="main-banner parallaxie" style="background: url('site/uploads/banner-02.jpg')">
 		<div class="heading">
             <!--h1 style="font-size: 40px; background-color: black;">Desenvolvedor de Software</h1-->
 			<p style="font-size: 25px;">"Conhecimento é asa. Use-o e voe."</p>
@@ -141,7 +141,7 @@
 
                 <div class="col-md-6">
                     <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/sobre-05.png" alt="" class="img-fluid img-rounded">
+                        <img src="site/uploads/sobre-05.png" alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -162,7 +162,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/izi.png" class="img-fluid" style="height: 250px;" alt="post-img" />
+							<img src="site/uploads/izi.png" class="img-fluid" style="height: 250px;" alt="post-img" />
 						</div>
 						<div class="post-info">
 							<h4>iZi - Orçamento Fácil</h4>
@@ -173,7 +173,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
+							<img src="site/uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
 							<div class="date">
 								<span>06</span>
 								<span>Aug</span>
@@ -193,7 +193,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
+							<img src="site/uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
 							<div class="date">
 								<span>06</span>
 								<span>Aug</span>
@@ -431,18 +431,18 @@
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
+    <script src="site/js/all.js"></script>
 	<!-- Camera Slider -->
-	<script src="js/jquery.mobile.customized.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script> 
-	<script src="js/parallaxie.js"></script>
-	<script src="js/headline.js"></script>
+	<script src="site/js/jquery.mobile.customized.min.js"></script>
+	<script src="site/js/jquery.easing.1.3.js"></script> 
+	<script src="site/js/parallaxie.js"></script>
+	<script src="site/js/headline.js"></script>
 	<!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="site/js/jqBootstrapValidation.js"></script>
+    <script src="site/js/contact_me.js"></script>
     <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.vide.js"></script>
+    <script src="site/js/custom.js"></script>
+    <script src="site/js/jquery.vide.js"></script>
 
 </body>
 </html>
