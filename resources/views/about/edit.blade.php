@@ -1,14 +1,12 @@
 @extends('home')
 
-@section('title', 'Dashboard')
+@section('title', 'Dashboard - Sobre')
 
-
-@if(session('erroStore'))
+@if(session('update'))
     <script>
-        window.alert("{{ session('erroStore') }}");
+        window.alert("{{ session('update') }}");
     </script>
 @endif
-
 
 @section('content')
 
@@ -18,7 +16,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-5 align-self-center">
-                <h4 class="page-title">Logomarca</h4>
+                <h4 class="page-title">Sobre</h4>
             </div>
             <div class="col-7 align-self-center">
                 <div class="d-flex align-items-center justify-content-end">
@@ -28,6 +26,7 @@
                                 <a href="#">Home</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                            <li class="breadcrumb-item active" aria-current="page">Sobre</li>
                         </ol>
                     </nav>
                 </div>
@@ -38,28 +37,52 @@
     <!-- End Bread crumb and right sidebar toggle -->
     <!-- ============================================================== -->
 
+
     <!-- ============================================================== -->
-    <!-- Form Logomarca -->
+    <!-- Form About -->
     <!-- ============================================================== -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <div class=" card card-body">
-                    <form action="{{ route('logomarca.store') }}" method="POST" enctype="multipart/form-data">
+                <!-- CARD -->
+                <div class="card card-body">
+
+                    <!-- FORM -->
+                    <form action="{{ route('about.update', ['about' => $about->id]) }}" method="POST" enctype="multipart/form-data" class="form-horizontal ">
                         @csrf
+                        @method('PUT')
+
                         <div class="form-group">
-                            <label>Arquivo Logomarca</label>
-                            <input type="file" name="logo" class="form-control" required>
+                            <label for="bio">Texto</label>
+                            <textarea name="bio" id="bio" class="form-control" rows="5">{{ $about->bio }}</textarea>
                         </div>
-                        <input type="submit" value="Salvar" class="btn btn-primary">
+
+                        <div class="row">
+                            <img src="/storage/{{ $about->img }}" alt="Imagem Eduardo" style="width: 200px; height: 120px; margin-left: 15px;">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="img">Imagem</label>
+                            <input type="file" name="img" id="img" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Currículo</label>
+                            <input type="file" name="curriculo" class="form-control">
+                        </div>
+
+                        <input type="submit" value="salvar" class="btn btn-primary">
                     </form>
+                    <!-- END OF FORM -->
+
                 </div>
+                <!-- END OF CARD -->
             </div>
         </div>
     </div>
+    <!-- ============================================================== -->
+    <!-- End About -->
+    <!-- ============================================================== -->
 
-    <!-- ============================================================== -->
-    <!-- Form Logomarca -->
-    <!-- ============================================================== -->
 
 @endsection
