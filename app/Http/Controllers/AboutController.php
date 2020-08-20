@@ -31,6 +31,14 @@ class AboutController extends Controller
         }
     }
 
+    // return path of curriculo to show on the view when user click at the button "curriculo"
+    public function showCurriculo() {
+        
+        $about = About::first(); //pega o único registro e na view exibe apenas o campo curriculo da taberla abouts
+
+        return view('showCurriculo', compact('about'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

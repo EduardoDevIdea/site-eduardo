@@ -48,7 +48,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<img class="img-fluid" src="site/images/logo-eduardo.png" alt="" style="width: 200px; height: 60px;"/>
+			<img class="img-fluid" src="/storage/{{ $logomarca->path }}" alt="" style="width: 200px; height: 60px;"/>
 		</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -126,22 +126,14 @@
                 <div class="col-md-6">
                     <div class="message-box">                        
                         <h2><strong>Sobre</strong></h2>
-                        <p>Poder desenvolver soluções é algo satisfatório para mim. Sempre busco tornar as atividades do cotidiano mais
-                            simples de serem executadas, e aliado ao meu perfil analítico, determinado, organizado, pude encontrar no desenvolvimento
-                            de software a satisfação em desenvolver soluções cada vez melhores e com qualidade.
-                        </p>
-						<p>
-                            Sinto que estou no caminho certo: disposto a encarar desafios, colaborar,
-                            aprender e evoluir pessoalmente e profissionalmente.
-                        </p>
-
-                        <a href="#" class="sim-btn btn-hover-new" data-text="Download CV"><span>Currículo</span></a>
+                        <p>{{ $about->bio }}</p>
+                        <a href="{{ route('curriculo') }}" class="sim-btn btn-hover-new" data-text="Download CV" target="_blank"><span>Currículo</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
                 <div class="col-md-6">
                     <div class="right-box-pro wow fadeIn">
-                        <img src="site/uploads/sobre-05.png" alt="" class="img-fluid img-rounded">
+                        <img src="/storage/{{ $about->img }}" alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
             </div><!-- end row -->

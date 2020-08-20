@@ -13,13 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/about', function () {
-    return view('about.create');
-});
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SiteController@index')->name('site'); //Direciona para controller que alimenta dados do site
 
 Auth::routes();
 
@@ -28,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/logomarca', 'LogomarcaController', ['except' => ['destroy']]);
 
 Route::resource('/about', 'AboutController', ['except' => ['destroy']]);
+
+Route::get('/curriculo', 'AboutController@showCurriculo')->name('curriculo');
